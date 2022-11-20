@@ -1,4 +1,10 @@
 def is_odd_string(word):
+    if len(word) % 2 == 0:
+        return False
+    else:
+        return True
+
+
     """Is the sum of the character-positions odd?
 
     Word is a simple word of uppercase/lowercase letters without punctuation.

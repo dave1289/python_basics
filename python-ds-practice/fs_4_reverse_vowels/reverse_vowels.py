@@ -1,4 +1,10 @@
 def reverse_vowels(s):
+    vowels = 'aeiouAEIOU'
+    vowel_index = []
+    for letter in s:
+        print(test)
+
+
     """Reverse vowels in a string.
 
     Characters which re not vowels do not change position in string, but all
@@ -19,3 +25,9 @@ def reverse_vowels(s):
     reverse_vowels("why try, shy fly?")
     'why try, shy fly?''
     """
+
+
+total = 1.26
+
+quarters = total / .25
+total -= quarters * .25
