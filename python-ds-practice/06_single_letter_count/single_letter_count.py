@@ -1,4 +1,5 @@
 def single_letter_count(word, letter):
+    return word.count(letter)
     """How many times does letter appear in word (case-insensitively)?
     
         >>> single_letter_count('Hello World', 'h')

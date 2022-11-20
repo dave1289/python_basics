@@ -1,4 +1,13 @@
 def two_oldest_ages(ages):
+    highest = 0
+    second = 0
+    for age in ages:
+        if age > highest:
+            highest = age
+    for age in ages:
+        if age > second and not age == highest:
+            second = age
+    return (second, highest)
     """Return two distinct oldest ages as tuple (second-oldest, oldest)..
 
         >>> two_oldest_ages([1, 2, 10, 8])

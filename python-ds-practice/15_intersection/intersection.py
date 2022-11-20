@@ -1,4 +1,10 @@
 def intersection(l1, l2):
+    # intersect_list = []
+    # for element in l1:
+    #     if element in l2:
+    #         intersect_list.append(element)
+    # return intersect_list
+    return [element for element in l1 if element in l2]
     """Return intersection of two lists as a new list::
     
         >>> intersection([1, 2, 3], [2, 3, 4])

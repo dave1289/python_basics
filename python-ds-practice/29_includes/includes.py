@@ -1,4 +1,6 @@
 def includes(collection, sought, start=None):
+    return sought in collection
+
     """Is sought in collection, starting at index start?
 
     Return True/False if sought is in the given collection:

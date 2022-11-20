@@ -1,4 +1,10 @@
 def find_factors(num):
+    factors = []
+    for x in range(1, num + 1):
+        if num % x == 0:
+            factors.append(x)
+    return factors
+        
     """Find factors of num, in increasing order.
 
     >>> find_factors(10)

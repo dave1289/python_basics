@@ -1,4 +1,29 @@
 def calculate(operation, a, b, make_int=False, message='The result is'):
+    def add(a,b):
+        return a + b
+    def sub(a, b):
+        return a - b
+    def mult(a, b):
+        return a * b
+    def divide(a, b):
+        return a / b
+    if make_int:
+        a = int(a)
+        b = int(b)    
+    if operation == 'add':
+        result = add(a, b)
+        return f'{message} {result}'
+    elif operation == 'subtract':
+        result = sub(a, b)
+        return f'{message} {result}'
+    elif operation == 'mult':
+        result = mult(a, b)
+        return f'{message} {result}'
+    elif operation == 'divide':
+        result = divide(a, b)
+        return f'{message} {result}'
+    else:
+        return None
     """Perform operation on a + b, ()possibly truncating) & returning w/msg.
 
     - operation: 'add', 'subtract', 'multiply', or 'divide'

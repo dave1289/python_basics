@@ -1,4 +1,9 @@
 def is_palindrome(phrase):
+    reverse = phrase[::-1];
+    if reverse == phrase:
+        return True
+    else:
+        return False
     """Is phrase a palindrome?
 
     Return True/False if phrase is a palindrome (same read backwards and

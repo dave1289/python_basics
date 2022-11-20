@@ -1,4 +1,19 @@
+def is_even(num):
+    return num % 2 == 0
+
+def is_string(el):
+    return isinstance(el, str)
+
 def partition(lst, fn):
+    success = []
+    fail = []
+    for element in lst:
+        if fn(element):
+            success.append(element)
+        else:
+            fail.append(element)
+    return success, fail
+
     """Partition lst by predicate.
      
      - lst: list of items

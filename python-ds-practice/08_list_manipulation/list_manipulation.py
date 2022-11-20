@@ -1,4 +1,18 @@
 def list_manipulation(lst, command, location, value=None):
+    if command == 'add':
+        if location == 'beginning':
+            lst.insert(0, value)
+            return lst[0]
+        elif location == 'end':
+            lst.append(value)
+            return lst[-1]
+    elif command == 'remove':
+        if location == 'beginning':
+            return lst.pop(0)
+        elif location == 'end':
+            return lst.pop(-1)
+    else:
+        return None
     """Mutate lst to add/remove from beginning or end.
 
     - lst: list of values

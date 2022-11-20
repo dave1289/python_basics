@@ -1,4 +1,12 @@
+import numpy as np
+
 def sum_up_diagonals(matrix):
+    b = np.asarray(matrix)
+    c = np.fliplr(b)
+    return np.trace(b) + np.trace(c)
+
+
+
     """Given a matrix [square list of lists], return sum of diagonals.
 
     Sum of TL-to-BR diagonal along with BL-to-TR diagonal:

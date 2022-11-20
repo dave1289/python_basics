@@ -1,4 +1,10 @@
 def number_compare(a, b):
+    if a == b:
+        return 'Numbers are equal'
+    elif b > a:
+        return 'Second is greater'
+    else:
+        return 'First is greater'
     """Report on whether a>b, b>a, or b==a
     
         >>> number_compare(1, 1)
